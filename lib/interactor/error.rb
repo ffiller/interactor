@@ -28,4 +28,10 @@ module Interactor
       super
     end
   end
+
+  # Public: Error raised when missing a required input.
+  class MissingInput < Failure; end
+
+  # Public: Error raised when missing an expected output.
+  class MissingOutput < Failure; end
 end
